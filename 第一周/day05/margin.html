@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box{
+			width: 400px;
+			height: 400px;
+			background-color: blue;
+			/*overflow: hidden;*/
+
+		}
+		#box p{
+			width: 100px;
+			height: 100px;
+			margin: 150px;
+			float: left;
+			background-color: green;
+		}
+		p{
+			height: 100px;
+			background-color: pink;
+		}
+		span{
+			background-color: red;
+			margin: 0;
+		}
+		em{
+			background-color: yellow;
+		
+		}
+		#box3{
+			width: 800px;
+			background-color: pink;
+			overflow: hidden;
+		}
+		#box3 h3{
+			width: 200px;
+			height: 100px;
+			background-color: red;
+			float: left;
+		}
+		#box3 p{
+			width: 200px;
+			height: 100px;
+			background-color: blue;
+			float: left;
+		}
+		#box3 i{
+			width: 200px;
+			height: 100px;
+			background-color: red;
+			float: left;
+		}
+		</style>
+</head>
+<body>
+	<!-- margin 
+		  可以写负值
+		  可以写百分比%（根据父元素宽度算的）
+		  auto 自动 
+		  margin上外边距向上传递： 当给一个元素中的第一个子元素书写上外边距的时候，上外边距就会向上传递，让父元素拥有了上外边距
+		  
+		  margin传递解决方式
+		  1.给父元素添加overflow： hidden 
+		  2.给父元素或者自身添加float 
+			
+		  块级元素间的垂直相邻的外边距会合并
+		  行内元素左右margin正常显示，上下不能正常执行
+		  浮动元素的上下左右相邻外边距不会重合
+
+	-->
+	<div id="box">
+		<p></p>
+	</div>
+	<span>span</span><em>em</em>
+	<div id="box3">
+		<h3>h3333</h3>
+		<p>pppppp</p>
+		<i>iiiiiii</i>
+	</div>
+</body>
+</html>

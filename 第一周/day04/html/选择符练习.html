@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+		/*
+		1. 页面中有两个div  两个p 一个span  两个a （标签中都有文本，文本自定）
+			两个ul 里面有三个li标签 li标签中有a标签(文本自定)
+		2. 两个div的宽度和高度相同为100px * 100px(元素)
+		3. div和p标签的背景颜色相同为粉色（群组）
+		4. 第二个div和 第一个a 和第一个span有相同的边框(5px 实线 绿色)（class）
+		5. 第二个a标签的文本颜色是灰色（id）
+		6. 第二个ul里面的a标签的文本颜色为黑色(包含)
+		*/
+		div{width:100px;height:100px;}
+		div,p{background-color:pink;}
+		.border{border:5px solid green;}
+		#color{color:gray;}
+		#ulbox a{color:black;}
+</style>
+</head>
+
+<body>
+	<div>div1</div>
+    <div class="border">div2</div>
+    <p>p111</p>
+    <p>p222</p>
+    <span class="border">span</span>
+    <a href="#" class="border">a111</a>
+    <a href="#" id="color">a222</a>
+    <ul>
+    		<li><a href="#">ullia11</a></li>
+            <li><a href="#">ullia12</a></li>
+            <li><a href="#">ullia13</a></li>
+    </ul>
+    <ul id="ulbox">
+    		<li><a href="#">ullia11</a></li>
+            <li><a href="#">ullia12</a></li>
+            <li><a href="#">ullia13</a></li>
+    </ul>
+</body>
+</html>

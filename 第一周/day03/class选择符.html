@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*
+			class选择符/类选择符
+			<元素名 class="class名">
+			.class名{属性：属性值}
+
+			细化写法： div.box2  权重为11
+				选中div标签中具有box2类名的标签
+			
+
+			多个元素可以书写相同的class名  将多个元素分成一个类
+			一个元素可以添加多个class名    将一个元素处于多个类中
+
+			class命名规则
+			必须以a-z或A-Z开头；后面可以跟数字 0-9  a-z或A-Z  下划线_  中划线-
+		*/
+		.color{
+			color: blue;
+		}
+		/*div[class="box2"]{
+			border: 2px solid #ccc;
+		}*/
+		div.box4{
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="color">11111</div>
+	<div class="box2">22222</div>
+	<div class="color">33333</div>
+	<div class="box4">444444</div>
+</body>
+</html>

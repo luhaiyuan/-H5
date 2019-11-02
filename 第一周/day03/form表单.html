@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		form{
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+			form 配合提交按钮使用（submit)
+			创建一个表单 表单用于向服务器传输数据 （作用是：收集用户信息）
+			name		规定表单的名称  在服务器端引用是做判别
+			action   规定提交表单时，向何处发送数据
+			method   规定发送数据的方式   get post 
+						get  使用url去发送数据  不安全  传输数据量小
+						post 使用密包（不可见）发送数据  相对安全  传输数据量大
+
+			表单控件
+			input 标签 行内元素
+			   type = "text" 文本输入框
+			   name=""       规定表单的名称  在服务器端引用是做判别
+				value=""      表单控件的值，可以设置默认值，在输入框中输入的内容也是值
+				placeholder=""   规定输入框的提示信息
+				maxlength=""     规定输入框中最大字符的输入长度，属性值为数字
+
+				type="submit"  配合form表单发送数据
+				      value 改变提交按钮显示的值
+				      name="" 规定提交按钮的名称
+
+				type="password" 密码框
+
+				type="button"  单纯的只是一个按钮
+						value="设置按钮中显示的值，如果不设置没有值"
+
+				type="reset"  重置按钮 刷新页面 可以将表单数据中输入的值，重置掉，恢复到初始状态
+						value="改变重置按钮的值"
+
+				
+
+	-->
+	<form action="https://www.baidu.com" method="get" name="form1">
+		<input type="text" placeholder="请输入你的密码" name="username" value="" maxlength="5">
+		<br><br>
+		密码：<input type="password" name="password" placeholder="请输入密码" maxlength="6">
+		<br><br>
+		<input type="submit" value="发送" name="submit1">
+		<input type="button" value="button按钮">
+		<input type="reset">
+	</form>
+</body>
+</html>

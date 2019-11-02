@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/**{
+			margin: 0;
+			padding: 0;
+		}*/
+		#box{
+			width: 800px;
+			height: 400px;
+			background-color: orange;
+			padding-top: 200px;
+		}
+		.box{
+			width: 400px;
+			height: 200px;
+			background-color: pink;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<!-- 选择符权重说明
+			css中用四位数字表示权重，权重的表达方式如：0，0，0，0
+			类型选择符的权重为      		0001
+			伪元素选择符的权重为   		0001            暂时未学习
+			class选择符的权重为     		0010 
+			属性选择符的权重为      		0010          	暂时未学习 
+			伪类选择符的权重为      		0010
+			id选择符的权重为          	0100
+			内联样式的权重为         		1000
+			通配符的权重为          		0000
+			子选择符的权重为       		0000   选择符1 > 选择符2
+			继承样式的权重为      		   0000             
+			兄弟选择符的权重为   		   0000			暂时未学习
+			
+			包含选择符的权重：为包含选择符的权重之和 -->
+	<div id="box">
+		<div class="box"></div>
+	</div>
+</body>
+</html>

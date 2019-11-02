@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			
+		}
+		#box{
+			width: 100px;
+			height: 100px;
+			padding: 150px;
+			background-color: orange;
+		}
+		#box p{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+		}
+		#box1{
+			background-color: pink;
+			width: 300px;
+			padding: 30px;
+		}
+		span{
+			padding: 20px;
+			background-color: green;
+
+		}
+		em{
+			background-color: yellow;
+		}
+		.span{
+			background-color: green;
+			border: 30px solid #ccc;
+		}
+		em{
+			background-color: pink;
+		}
+		#box2{
+			background-color: #f40;
+		}
+		#box3{
+			width: 400px;
+			height: 200px;
+			background-color: blue;
+		}
+		#box3 p{
+			width: 100px;
+			height: 200px;
+			padding-left: 10%;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<!-- padding属性：  数值+px  % 相对于父元素的宽度百分比
+			需要添加在父元素身上
+			可以通过padding 改变子元素在父元素中的位置，也可以通过paddIng 改变内容在容器中的位置关系
+			需从元素宽高减去添加的padding的值
+			
+			padding属性 可以添加多个属性
+			padding单独设置一个方向的padding值： 
+				padding-top/right/bottom/left ： 属性值
+			
+			注意：行内元素，左右paddIng正常显示执行，上下不能正常显示执行，所以不能给行内元素设置上下padding
+					行内元素，左右border正常显示执行，上下不能正常显示执行，所以不能给行内元素设置上下border
+
+			注意：1.当给一个没有设置宽度的块级元素添加左右的padding时，会自动压缩width 所以不用减去添加的左右paddIng
+					2. 不允许指定负值
+
+			注意：写% 相对于父元素的宽度百分比
+	 -->
+	<span class="span">span</span><em>sdfsdf</em>
+	<div id="box">
+		<p></p>
+	</div>
+	<div id="box1">
+		美好的一天
+	</div>
+	<span>45254</span><em>sdf</em>
+	<br><br><br>
+	<div id="box2">
+		在此种情况下不用减去
+	</div>
+	<div id="box3">
+		<p></p>
+	</div>
+</body>
+</html>

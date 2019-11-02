@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 200px;
+			height: 200px;
+			background: orange;
+			border-style: solid;
+			border-color: pink;
+			border-width: 10px 20px 30px 40px;
+			border-top-color: red;
+		}
+		#box1{
+			width: 300px;
+			height: 300px;
+			background-color: #ccc;
+			border-top: 10px solid blue;
+			border-left: 10px solid orange;
+			border-bottom: 10px solid #333;
+			border-right: 10px solid #555;
+		}
+		#box3{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			border: 20px outset #ccc;
+		}
+		.triangle{
+			width: 0;
+			height: 0;
+			border: 20px solid transparent;
+			border-left-color: red;
+		}
+	</style>
+</head>
+<body>
+	<!-- border-width
+				上 左右 下
+		  border-color
+		  		上 左右 下
+		  border-style  可以设置none  没有边框
+		  		上 右 下 左
+
+			  groove 3D凹槽边框
+			  ridge  3D茏状边框
+			  inset  3Dinset边框
+			  outset  3Doutset边框
+	 -->
+	<div id="box"></div>
+	<br>
+	<div id="box1"></div>
+	<br>
+	<div id="box3"></div>
+	<div class="triangle"></div>
+</body>
+</html>

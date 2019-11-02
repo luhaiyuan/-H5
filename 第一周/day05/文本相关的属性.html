@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*文本相关的属性：
+			color  
+			font-size   属性值： 数值+单位 
+			font-family 
+			font-weight  normal   bold   bold   100-900  400为normal 700为bold(100-500不加粗；600-900加粗)  
+			font-style   italic(倾斜度小) oblique(斜度大) normal
+			lint-height  一行的高度     数值+单位		
+				行高具有垂直居中性：文字在行高中是垂直居中显示
+				行高可以撑开元素的高度；
+				行高可以在块级元素没有设置宽度的情况下，可以撑开块级元素的高度;
+				行内元素不能设置高度，所以行高不能撑开行内元素的高度
+
+			文本属性简写： font: 倾斜 加粗 文字大小/行高 字体;
+			文本属性的最简写： 文字大小/行高 "文字字体"（必须加引号,哪怕没有字体）
+
+			text-align  设置文本在元素中的水平对齐方式  
+			text-decoration : 规定添加文本的修饰 none underline overline line-through
+				none: 没有任何修饰;
+				underline 添加下划线
+				overline  上划线
+				line-through  删除线
+			text-indent 数值+单位 
+				em：相对单位 相对当前所在位置的文字大小计算的单位  
+				px: 固定单位;
+
+			text-transform 设置文本中单词的大小写
+				none: 默认值;
+				capitalize: 首字母大写;
+				uppercase: 定义文本中仅有大写字母;
+				lowercase: 定义文本中仅有大写字母;
+
+			letter-spacing 设置文字字符之间的间距
+				normal  0px 默认值，没有间距
+				lenth 数值+单位 em 可以接受负值
+			
+			word-spacing 设置单词间的间距
+				normal  0px 默认值，没有间距
+				lenth 数值+单位 em 可以接受负值
+			*/
+		#box{
+			color: #008c8c;
+			width: 500px;
+			background: orange;
+			font: 30px/50px "";
+			text-decoration: none;
+			text-indent: 2em;
+			letter-spacing: 20px;
+			word-spacing: normal;
+
+		}
+		span{
+			background: pink;
+			line-height: 30px;
+		}
+		#box2{
+			width: 700px;
+			background-color: #ccc;
+			text-align: center;
+		}
+		div{
+			background: #ccc;
+			text-transform: lowercase;
+		}
+
+	</style>
+</head>
+<body>
+	<div>Red BluE orange</div>
+	<div id="box">
+		你们这两天是不是感觉很轻松 你们这两天是不是感觉很轻松你们这两天是不是感觉很轻松你们这两天是不是感觉很轻松
+	</div>
+	<span>美好的一天</span>
+	<div id="box2">
+		你们认真听
+	</div>
+</body>
+</html>

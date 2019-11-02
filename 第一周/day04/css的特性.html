@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*css特性*/
+			/*层叠性：一个元素可以被多个选择符选中，如果多个选择符发生冲突，就会执行权重高的样式
+				继承性：在css中，子元素在没有添加某些样式的时候，会继承父元素的样式应用到自己身上，如果自己设置此样式，就不会继承父元素的样式，因为继承得到的样式没有权重
+			*/
+		/*div{
+			width: 400px;
+		}
+		.box{
+			height: 300px;
+			width: 500px;
+		}
+		#box{
+			background-color: orange;
+		}*/
+		#box{
+			color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box">
+		div
+		<p>
+			ppp
+			<span>span</span>
+		</p>
+	</div>
+</body>
+</html>

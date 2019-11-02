@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*通配符： 权重为0
+			能选中当前页面中的所有的元素，包括html和body，赋予其样式
+			作用：常用来重置样式
+			*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.div1, .div2, p, h3{
+			border: 1px solid #ccc;
+		}
+		ul{
+			border: 10px solid red;
+		}
+		li{
+			border: 10px solid yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">div1</div>
+	<h3>123123123</h3>
+	<div class="div2">div2</div>
+	<p>1231</p>
+	<ul>
+		<li>111</li>
+		<li>222</li>
+		<li>333</li>
+	</ul>
+</body>
+</html>

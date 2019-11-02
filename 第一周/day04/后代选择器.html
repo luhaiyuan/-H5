@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		p{
+			background-color: orange;
+		}
+		div ul li p{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<!-- 后代选择符/包含选择器    权重：应用的选择符权重相加
+			语法： 选择符1 选择符2 {属性：属性值}
+			选择符1和选择符2用空格隔开，选择符2是选择符1的后代
+
+	 -->
+	<div>
+		<p>我是p标签</p>
+		<ul>
+			<li>
+				<p>pppppppp</p>
+			</li>
+			<li>
+				<p>ppppp</p>
+			</li>
+			<p>ppp</p>
+		</ul>
+	</div>
+	<p>我是和div同级的p标签</p>
+</body>
+</html>

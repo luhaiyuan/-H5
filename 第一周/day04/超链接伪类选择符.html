@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*超链接伪类选择符：  权重为10
+			:link 		初始时的状态
+			:visited    访问后的状态
+			:hover		鼠标滑过的状态
+			:active     鼠标摁下没有抬起的状态， 超链接被激活的时候状态*/
+			/*如果同时使用的时候，顺序必须是：l v h a*/
+			/*:hover 不仅仅可以用在超链接身上*/
+		a:link{
+			color: gray;
+		}
+		a:visited{
+			color: orange;
+		}
+		a:hover{
+			color: pink;
+		}
+		a:active{
+			color: green;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+		}
+		.box:hover{
+			background-color: pink;
+			width: 500px;
+			transition: 0.5s;
+		}
+		.box1{
+			width: 500px;
+			height: 300px;
+			background: blue;
+		}
+		.box1 p{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+		.box1:hover p{
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<a href="#">百度</a>
+	<div class="box"></div>
+	<div class="box1">
+		<p></p>
+	</div>
+</body>
+</html>

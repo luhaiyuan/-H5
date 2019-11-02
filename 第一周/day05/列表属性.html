@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*
+			列表相关属性：
+			 	list-style-type: 设置列表符号样式;
+			 		none  circle square disc
+			 	list-style-position: 设置列表符号的位置;
+			 		outside inside
+			 	list-style-image: 设置图片作为列表符号;
+			 		url(图片路径)
+			简写属性
+			 	list-style: type/image  position;
+			 	list-style: none;(重要)
+		*/
+		ul{
+			background: green;
+			border: 2px solid red;
+		}
+		ul li{
+			background: pink;
+			border: 2px solid yellow;
+			/*list-style-type: circle;*/
+			/*list-style-position: inside;
+			list-style-image: url(./整体.png);*/
+			list-style: url(./整体.png) inside;
+		}
+	</style>
+</head>
+<body>
+	<ul id="box">
+		<li>1111</li>
+		<li>2222</li>
+		<li>3333</li>
+		<li>4444</li>
+		<li>5555</li>
+	</ul>
+</body>
+</html>

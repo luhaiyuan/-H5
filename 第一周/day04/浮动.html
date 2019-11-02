@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*float 浮动: 浮动可以将元素在一行显示;
+			left / none(默认值，不浮动) / right 
+
+			要浮动一窝都浮动：当一个元素中的其中一个子元素使用了浮动，那这个元素中的所有子元素都要浮动
+
+			脱离文档流：浮动元素会使元素脱离文档流；会导致高度塌陷；
+							当一个元素使用了浮动属性，不能占据正常的文档流，会使父元素的高度塌陷
+
+			清除浮动：解决浮动之后带来的高度塌陷的影响
+					1.固定高度  给父元素书写高度（子元素中最高的高度）---- 不灵活
+					2.给浮动元素的父元素，添加一个overflow: hidden;
+
+			元素浮动过后：在没有书写宽高的情况下，宽高为0
+			浮动元素会产生一个块级框，不论之前是什么元素，都可以书写宽高
+			假如在一行之上只有极少空间可供浮动元素显示，那么这个元素会在下一行显示，这个过程会持续到某一行有足够空间为止
+					*/
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 800px;
+			overflow: hidden;
+			background-color: orange;
+		}
+		#box .div1{
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			float: left;
+		}
+		#box .div2{
+			width: 200px;
+			height: 300px;
+			float: left;
+			background-color: green;
+		}
+		#box .div3{
+			width: 200px;
+			height: 100px;
+			float: left;
+			background-color: red;
+		}
+		p{
+			height: 100px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div3"
+
+
+
+		></div>
+	</div>
+	<p></p>
+	div*12{1}
+</body>
+</html>

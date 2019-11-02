@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 300px;		/*内容区宽度*/
+			height: 200px;		/*内容区高度*/
+			padding: 50px;		/*内边距/填充区/补白*/
+			margin: 50px;		/*外边距/边界*/
+			border: 20px solid #ccc;  /*边框*/
+			background-color: orange;
+		}
+		p{
+			height: 100px;
+			background-color: red;
+		}
+		/*
+			显示空间：
+				水平：width + 左右padding + 左右border
+				垂直：height + 上下padding + 上下border
+			占据空间：
+				水平：width + 左右padding + 左右border + 左右margin
+				垂直：height + 上下padding + 上下border + 上下margin
+		*/
+	</style>
+</head>
+<body>
+	<!-- padding可以控制父元素与子元素的位置关系
+		  margin可以控制子元素在父元素中的位置
+		  margin可以控制同级元素之间的位置关系
+	 -->
+	<div id="box">
+		无奋斗，不清纯
+	</div>
+	<p></p>
+</body>
+</html>
